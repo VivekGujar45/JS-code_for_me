@@ -40,3 +40,28 @@ console.log(typeof myFunction); //data type is Function
 console.log(typeof anotherId); // type is symbol
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// ********************************************************
+
+// Stack (primitive) iske andhar jab bhi koi data rakhte ho tho uska hume reference milta hai , Heap (non-primitve) aur iske andhar jab data rakhte ho tab reference milta hai!
+
+let myname = "vivekgujardotcom"
+
+let anothername = myname
+anothername = "vickygujar"
+
+console.log(myname);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email="vickygujar@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
