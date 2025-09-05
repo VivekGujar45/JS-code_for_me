@@ -28,5 +28,14 @@ JSuser.email = "vivekguj@zomato.com"
 
 console.log(JSuser);
 
+JSuser.greeting = function(){
+    console.log("Hello JS user");
+}
+JSuser.greetingTwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
+}
+
+console.log(JSuser.greeting());
+console.log(JSuser.greetingTwo());
 
 
