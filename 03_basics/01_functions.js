@@ -43,4 +43,27 @@ console.log(loginUserMessage("VivekGujar"))
 // console.log(loginUserMessage())//result is undefined just logged in
 
 
+function calculateCartPrice(...num1){//... is rest operator
+    return num1
+}
+
+// console.log(calculateCartPrice(200,400,600));
+
+const user = {
+    username: "Vivek",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);
+    
+}
+//handleObject(user)
+
+const myNewArray = [200,100,500,400]
+
+function returnsecondValue(getarray){
+    return getarray[1]
+}
+console.log(returnsecondValue(myNewArray));
 
