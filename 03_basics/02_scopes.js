@@ -7,7 +7,7 @@ if (true){
     let a =10 //yeh print nahi hoga scope ke bahar
     const b=20 //yeh bhi print nhai hoga scope ke bahar
     var c=30 //yeh hojayega print 
-    console.log("INNER: ",a);
+    // console.log("INNER: ",a);
     
  }
 console.log(a);//global scope printed!
@@ -24,7 +24,34 @@ function one() {
         console.log(username);
         
     }
-    console.log(website);
+    // console.log(website);
     two()
 }
-one()
+// one()
+
+if(true) {
+    const username = "Vivek"
+    if (username==="Vivek") {
+        const website = "youtube"
+        // console.log(username+website);
+        
+    }
+    // console.log(website);//error dega out of scope
+    
+}
+// console.log(username); //error dega out of scope
+
+// ****************INTERESTING****************
+
+console.log(addone(5));
+
+function addone(num){
+    return num+1
+}
+
+console.log(addTwo(5));//we get error because we have stored the fucntion in a variable
+
+const addTwo = function(num){
+    return num+2
+}
+
