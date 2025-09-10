@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | vivek gujar codesss</title>
+</head>
+<body style="background-color: black; color:aliceblue">
+    <div class="parent">
+        <div class="day"> Monday</div>
+        <div class="day"> Tuesday</div>
+        <div class="day"> wednesday</div>
+        <div class="day"> Thrusday</div>
+    </div>
+    
+</body>
+<script>
+    const parent=document.querySelector('.parent')//aap . se parent ko select kr rahe ho
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1]);
+
+    //array hai tho aap for loop laga sakte ho
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    parent.children[1].style.color = 'orange'
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const Oneday=document.querySelector('.day')
+    // console.log(Oneday);
+
+    // console.log(Oneday.parentElement);
+    // console.log(Oneday.nextElementSibling);
+
+    // console.log("nodes: ",parent.childNodes);
+    
+    
+</script>
+
+</html>
