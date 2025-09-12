@@ -72,11 +72,28 @@ const promiseFive = new Promise(function(resolve,reject){
 // promiseFive.then(()=>{})
 
 async function consumePromiseFive( ){
+    try{
     const respone=await promiseFive
     console.log(respone);
+    } catch (error){
+        console.log(error);
+        
+    }
     
 }    
 
 consumePromiseFive()
 
+async function getAllusers() {
+    try{
+    const response = await fetch('')
+    const data = response.json()
+    console.log(data);
+    }
+    catch (error) {
+        console.log('Error find',error);
+        
+    }
+    
+}
     
